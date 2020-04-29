@@ -1,0 +1,32 @@
+esphome:
+  name: office_clock
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "404 mit Reis"
+  password: "Perzeptive Multistabilitaet"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Officeclock Fallback Hotspot"
+    password: "avi5CdAxUWRR"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "liek1995"
+
+ota:
+  password: "liek1995"
+
+light:
+  - platform: neopixelbus
+    type: GRB
+    pin: GPIO3
+    num_leds: 116
+    name: "Uhr Büro"

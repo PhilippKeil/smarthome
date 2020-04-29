@@ -1,0 +1,25 @@
+.*
+!.gitignore
+
+homeassistant.code-workspace
+
+# Websites
+!websites/html/
+
+# Grocy
+websites/grocy/*
+!websites/grocy/data
+websites/grocy/data/*
+!websites/grocy/data/config.php
+
+# Home Assistant
+homeassistant/*
+!homeassistant/*.yaml
+homeassistant/secrets.yaml
+
+# ESPhome
+esphome-config/*
+!esphome-config/*.yaml
+
+# NGINX config
+#!nginx-site-conf/*.conf
